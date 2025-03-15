@@ -1,0 +1,6 @@
+set(PROJECT_NAME snapTest)
+project(${PROJECT_NAME})
+add_subdirectory(libs/googletest-main)
+include_directories(../../libs/googletest-main/googletest/include)
+add_executable(${PROJECT_NAME} testMain.cpp ../src/snap.cpp ../src/userInput.cpp ../src/snap.h ../src/deck.h ../src/deck.cpp ../src/deck.cpp)
+target_link_libraries(${PROJECT_NAME} gtest gtest_main)

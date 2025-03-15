@@ -1,0 +1,1 @@
+add_executable(snap snap.cpp main.cpp userInput.cpp snap.h deck.h deck.cpp deck.cpp)
